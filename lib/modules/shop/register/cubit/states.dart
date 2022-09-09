@@ -1,22 +1,21 @@
 import 'package:udemy_flutter/models/login_model.dart';
 
-abstract class ShopLoginStates {}
+abstract class ShopRegisterStates {}
 
-class ShopLoginInitialState extends ShopLoginStates {}
+class ShopRegisterInitialState extends ShopRegisterStates {}
 
-class ShopLoginLoadState extends ShopLoginStates {}
+class ShopRegisterLoadState extends ShopRegisterStates {}
 
-class ShopLoginSuccessState extends ShopLoginStates {
+class ShopRegisterSuccessState extends ShopRegisterStates {
 
   final ShopLoginModel loginModel;
 
-  ShopLoginSuccessState(this.loginModel);
+  ShopRegisterSuccessState(this.loginModel);
 }
 
-class ShopLoginErrorState extends ShopLoginStates {
-  final String error
-  ;
+class ShopRegisterErrorState extends ShopRegisterStates {
+  final String error;
 
-  ShopLoginErrorState(this.error);
+  ShopRegisterErrorState(this.error);
 }
-class ShopPasswordVisibilityState extends ShopLoginStates {}
+class ShopPasswordVisState extends ShopRegisterStates {}
