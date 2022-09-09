@@ -77,7 +77,7 @@ class _Search_ScreenState extends State<Search_Screen> {
                               },
                               itemCount: SearchCubit.get(context).model.data.data.length),
                         ),
-
+//ddddd
 
                     ],
                   ),
